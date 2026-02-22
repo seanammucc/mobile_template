@@ -10,7 +10,10 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.seanammdev.mobile-template"
+      "bundleIdentifier": "com.seanammdev.mobile-template",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This allows us to provide you with a better ads experience."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -47,7 +50,18 @@
             "deploymentTarget": "15.1"
           }
         }
-      ]
+      ],
+      [
+        "react-native-fbsdk-next",
+        {
+          "facebookAppId": "REPLACE_WITH_YOUR_FACEBOOK_APP_ID",
+          "facebookClientToken": "REPLACE_WITH_YOUR_FACEBOOK_CLIENT_TOKEN",
+          "facebookDisplayName": "mobile_template",
+          "facebookAutoLogAppEventsEnabled": true,
+          "facebookAdvertiserIDCollectionEnabled": true
+        }
+      ],
+      "expo-tracking-transparency"
     ],
     "experiments": {
       "typedRoutes": true,
